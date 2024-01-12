@@ -3,6 +3,8 @@ Submissions for DevPipeline's Frontend Course
 
 To complete this assignment I wanted to create a simple portfolio site for Simpsons Troy McClure. 
 
+Initially I had planned on using an API provided earlier in the class to classify Planets from Star Wars. This feel through due the amount of JS needed and time. 
+
 Instructions provided for the assignment:
 
 Wireframe your Website
