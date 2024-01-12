@@ -1,8 +1,9 @@
 # dp-frontend-submit
 Submissions for DevPipeline's Frontend Course
 
+To complete this assignment I wanted to create a simple portfolio site for Simpsons Troy McClure. 
 
-Your website should contain the following:
+Instructions provided for the assignment:
 
 Wireframe your Website
 Plan out the content for 1 (one) webpage.
@@ -47,11 +48,5 @@ table body "<tbody> </tbody>"
 table row"<tr> </tr>"
 table data "<td> </td>"
 table foot"<tfoot> </tfoot>"
-
-
-
-So heres what i did
-
-I tool the api from a earlier section in the course that is used to provide information about Star Wars
 
 
