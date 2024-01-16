@@ -1,0 +1,77 @@
+<!--eventChoice.html-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/commonStyles.css">
+    <link rel="stylesheet" href="../styles/tableStyles.css">
+    <link rel="stylesheet" href="../styles/navStyles.css">
+    <title>Welcome please select a from the table below</title>
+</head>
+
+<body>
+    <section class="glass-card" style="max-width: 500px;">
+        <img src="https://imgs.search.brave.com/NVADQmrmRojfD3dRVE1LRE12N6-H7sWR6J3nWHnCJik/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9zb3V0/aHdlc3RtdC5jb20v/ZXZlbnRpbWFnZXMv/SGVhZHdhdGVycyUy/MENvdW50cnklMjBK/YW0yLmpwZz9wcmVz/ZXQ9aGVyb2ltYWdl/LXhs">
+    </section>
+    <section class="glass-card" style="max-width: 900px;">
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="./userConfig.html">WHO ARE YOU</a>
+                </li>
+            </ul>
+        </nav>
+
+        <h2>Please select a concert from the table below</h2>
+
+        <section class="center">
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Concert Name</th>
+                        <th scope="col">Link to More Info</th>
+                        <th scope="col">Ticket Price</th>
+                        <th scope="col">How many nights?</th>
+                        <th scope="col">This one? </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td scope="row">Country Jam</td>
+                        <td><a href="https://countryjam.com/" target="_blank">link</a></td>
+                        <td>$ 450.99 per night</td>
+                        <td><input type="number" name="amount_event" min="0" step="1"></td>
+                        <td><input type="checkbox" checked></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th scope="row"></th>
+                        <td></td>
+                        <td></td>
+                        <td>Total</td>
+                        <td>1 Available Events</td>
+                        <!--Update when we do forms to give a active amount of events-->
+                    </tr>
+                </tfoot>
+            </table>
+            <button id="submit_event" ><a href="./place2stay.html">Submit Event and Update Cart</a></button>
+            <!--Update when we do forms-->
+            <button><a href="../index.html">Cancel</a></button>
+        </section>
+    </section>
+    <section class="glass-card" style="max-width: 300px;">
+        <h1>Your Cart:</h1><!--Update we do forms-->
+        <p>Stay: 'selected stay'</p><!--Update we do forms-->
+        <p>Event: 'selected event'</p><!--Update we do forms-->
+        <p>Total: 'summed amount'</p><!--Update we do forms-->
+    </section>
+</body>
+
+</html>
+

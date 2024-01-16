@@ -1,0 +1,93 @@
+/* tableStyles.css*/
+.center {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px auto;
+}
+
+.center th,
+.center td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    width: auto;
+    white-space: nowrap; 
+    text-align: center;
+}
+
+.center thead {
+    background-color: #2e2d2d;
+    color: white; 
+}
+
+.center th {
+    text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap; 
+}
+
+.center tbody tr td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap; 
+    overflow: hidden;
+}
+
+.center tfoot {
+    background-color: #2e2d2d;
+    color: white; 
+}
+
+.center tfoot tr th,
+.center tfoot tr td {
+    padding: 15px;
+}
+
+
+/*styles for stays */
+.center-stay {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px auto;
+}
+
+.center-stay th,
+.center-stay td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    min-width: 50px;
+    width: auto;
+    max-width: 350px;
+    white-space: nowrap; 
+    text-align: center;
+}
+
+.center-stay thead {
+    background-color: #2e2d2d;
+    color: white; 
+}
+
+.center-stay th {
+    text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap; 
+}
+
+.center-stay tbody tr td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap; 
+    overflow: hidden;
+}
+
+.center-stay tfoot {
+    background-color: #2e2d2d;
+    color: white; 
+}
+
+.center-stay tfoot tr th,
+.center-stay tfoot tr td {
+    padding: 15px;
+}
+

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/commonStyles.css">
+    <link rel="stylesheet" href="../styles/tableStyles.css">
+    <link rel="stylesheet" href="../styles/navStyles.css">
+    <title>Welcome please select a from the table below</title>
+</head>
+
+<body>
+    <section class="glass-card" style="max-width: 500px;">
+        <iframe width="460" height="315" src="https://www.youtube.com/embed/jpg5GavunQc" frameborder="0" ></iframe>
+    </section>
+    
+    <section class="glass-card" style="max-width: 900px;">
+        <nav>
+            <a>|</a>
+            <a href="../index.html">HOME</a>
+            <a>|</a>
+            <a href="./userConfig.html">WHO ARE YOU</a>
+            <a>|</a>
+        </nav>
+
+        <h2>Please select a stay from the table below</h2>
+
+        <section class="center">
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Stay Name</th>
+                        <th scope="col">Link to More Info</th>
+                        <th scope="col">Stay Price</th>
+                        <th scope="col">How many nights?</th>
+                        <th scope="col">This one? </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td scope="row">Super 8 Motel</td>
+                        <td><a href="https://www.wyndhamhotels.com/super-8" target="_blank">link</a></td>
+                        <td>$ 40.99 per night</td>
+                        <td><input type="number" name="amount_event" min="0" step="1"></td>
+                        <td><input type="checkbox" checked></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th scope="row"></th>
+                        <td></td>
+                        <td></td>
+                        <td>Total</td>
+                        <td>1 Available Stays</td>
+                        <!--Update when we do forms to give a active amount of stays-->
+                    </tr>
+                </tfoot>
+            </table>
+            <button id="submit_event"><a href="./userConfig.html">Submit Event and Update Cart</a></button>
+            <!--Update when we do forms-->
+            <button><a href="../index.html">Cancel</a></button>
+        </section>
+    </section>
+    <section class="glass-card" style="max-width: 300px;">
+        <h1>'user's Cart:</h1><!--Update we do forms-->
+        <p>Stay: 'selected stay'</p><!--Update we do forms-->
+        <p>Event: 'selected event'</p><!--Update we do forms-->
+        <p>Total: 'summed amount'</p><!--Update we do forms-->
+    </section>
+</body>
+
+</html>
+

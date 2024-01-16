@@ -1,0 +1,57 @@
+/* commonStyles.css*/
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: lightseagreen;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 8px 16px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    text-align: center;
+    margin: 20px;
+}
+
+h1, h2, h3 {
+    color: #333;
+    padding: 10px 20px;
+    margin: 0 10px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: darkblue;
+}
+
+.home-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.home-buttons a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 0 10px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
