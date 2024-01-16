@@ -1,0 +1,32 @@
+<!-- resForm.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservation Form</title>
+</head>
+<body>
+    <div>
+        <nav>
+            <ol>
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+            </ol>
+        </nav>
+    </div>
+    <div class="res-container">
+        <form action="completedForm.html" method="get">
+            <input name="f_name" type="text" placeholder="Your first Name">
+            <input name="l_name" type="text" placeholder="Your last Name">
+            <input name="email" type="email" placeholder="Your Email">
+            <input name="p_number" type="tel" placeholder="Your Phone Number">
+            <label name="start_date">Start Date:</label>
+            <input name="s_date" id="start_date" type="date" placeholder="Start Date">
+            <label name="end_date">End Date:</label>
+            <input id="e_date" id="end_date" type="date" placeholder="End Date">
+            <button id="submit"><a href="completedForm.html">Submit</a></button>
+        </form>
+    </div>
+</body>
