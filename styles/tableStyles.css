@@ -27,7 +27,7 @@
 }
 
 .center tbody tr td {
-    padding: 15px;
+    padding: 5px;
     border-bottom: 1px solid #ddd;
     white-space: nowrap; 
     overflow: hidden;
@@ -43,8 +43,6 @@
     padding: 15px;
 }
 
-
-/*styles for stays */
 .center-stay {
     width: 100%;
     border-collapse: collapse;

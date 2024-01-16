@@ -10,6 +10,13 @@ body {
     color: #333;
 }
 
+.glass-card-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    margin: 20px;
+}
+
 .glass-card {
     background: rgba(255, 255, 255, 0.3);
     border-radius: 15px;
@@ -55,3 +62,21 @@ a:hover {
     align-items: center;
 }
 
+.button-other button {
+    background-color: #333;
+    border: 1px solid #eee;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.button-other button a {
+    color: #eee;
+}
+
+.button-other button:hover,
+.button-other button a:hover {
+    color: darkblue;
+    background-color: #eee;
+}

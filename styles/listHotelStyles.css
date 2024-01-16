@@ -1,0 +1,21 @@
+/* listHotelStyles.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 0;
+    background-color: lightseagreen;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    overflow-y: auto; 
+}
+.glass-card-container-all-hotel {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    max-height: auto; 
+    overflow-y: auto; 
+    overflow-x: hidden;
+    margin: 20px;
+}
