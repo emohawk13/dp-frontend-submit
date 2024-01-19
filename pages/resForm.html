@@ -8,25 +8,42 @@
   <title>Reservation Form</title>
 </head>
 <body>
-    <div>
-        <nav>
-            <ol>
-                <li>
-                    <a href="../index.html">Home</a>
-                </li>
-            </ol>
-        </nav>
-    </div>
+    <nav>
+        <li>
+            <a href="../index.html">Home</a>
+        </li>
+    </nav>
     <div class="container">
         <form action="completedForm.html" method="get" >
-            <input name="f_name" type="text" placeholder="Your first Name">
-            <input name="l_name" type="text" placeholder="Your last Name">
-            <input name="email" type="email" placeholder="Your Email">
-            <input name="p_number" type="tel" placeholder="Your Phone Number">
-            <label name="start_date">Start Date:</label>
-            <input name="s_date" id="start_date" type="date" placeholder="Start Date">
-            <label name="end_date">End Date:</label>
-            <input id="e_date" id="end_date" type="date" placeholder="End Date">
+            <div>
+                <input name="f_name" type="text" placeholder="Your first Name">
+                <input name="l_name" type="text" placeholder="Your last Name">
+                <input name="email" type="email" placeholder="Your Email">
+                <input name="p_number" type="tel" placeholder="Your Phone Number">
+            </div>
+            <div>
+                <label for="s_date">Start Date:</label>
+                <input name="s_date" id="start_date" type="date" placeholder="Start Date">
+                <label for="e_date">End Date:</label>
+                <input id="e_date" for="end_date" type="date" placeholder="End Date">
+            </div>
+            <div>
+                <label for="basic">Basic Package</label>
+                <input type="radio" id="basic" checked>
+                <label for="basic">Basic Package</label>
+                <input type="radio" id="basic" checked>
+            </div>
+            <div>
+                <label for="car">Car Rental</label>
+                <input type="checkbox" id="car" checked>
+                <label for="hotel">Hotel Rental</label>
+                <input type="checkbox" id="hotel">
+                <label for="other">Other Accommodations</label>
+                <input type="checkbox" id="other">
+                <label for="other-tex">For Other Accommodations</label>
+                <input type="textarea" id="other">
+            </div>
+            
             <button id="submit"><a href="completedForm.html">Submit</a></button>
         </form>
     </div>
