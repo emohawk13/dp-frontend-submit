@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking Summary</title>
+    <link rel="stylesheet" href="/styles/common-styles.css">
+    <link rel="stylesheet" href="/styles/submitted-styles.css">
+</head>
+<body>
+    <h1>Booking Summary</h1>
+    <div id="summary"></div>
+    <footer>
+        <h6>Feel free to reach our company here</h6>
+        <p>435-889-8855</p>
+      </footer>
+    <script>
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const firstName = urlParams.get("fname");
+        const lastName = urlParams.get("lname");
+        const email = urlParams.get("email");
+        const phoneNumber = urlParams.get("pnumber");
+        const startDate = urlParams.get("s-date");
+        const endDate = urlParams.get("e-date");
+        const package = urlParams.get("package");
+        const rentalCar = urlParams.has("rentalCar") ? "Yes" : "No";
+        const hotel = urlParams.has("hotel") ? "Yes" : "No";
+        const otherAccommodations = urlParams.has("accommodations") ? "Yes" : "No";
+        const otherAccommodationsRequest = urlParams.get("otherAccommodationsRequest");
+        /// Above feeds the fields and below creates the HTML structure
+        const summaryContent = `
+            <h1>Name: ${firstName} ${lastName}</h1>
+            <p>Email: ${email}</p>
+            <p>Phone Number: ${phoneNumber}</p>
+            <p>Start Date: ${startDate}</p>
+            <p>End Date: ${endDate}</p>
+            <p>Package: ${package}</p>
+            <p>Rental Car: ${rentalCar}</p>
+            <p>Hotel: ${hotel}</p>
+            <p>Other Accommodations: ${otherAccommodations}</p>
+            ${otherAccommodations === "Yes"
+                ? `<p>Other Accommodations Request: ${otherAccommodationsRequest}</p>`: ""}`;
+        document.getElementById("summary").innerHTML = summaryContent;
+    </script>
+</body>
+</html>

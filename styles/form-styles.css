@@ -1,0 +1,79 @@
+/* Form Styles */
+form {
+  max-width: 800px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  top: 30%;
+  left: 50%;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"] textarea {
+  width: 100%;
+  min-height: 1em;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Dates Grid Styles  */
+.grid-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.grid-group > .one-row {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Options Section */
+.options {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.options div {
+  margin-bottom: 3%;
+}
+
+.options input[type="radio"],
+.options input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+textarea {
+  resize: vertical;
+  display: none;
+}
+
+/* Submit Button */
+.submit-container {
+    padding: 2%;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #4caf50;
+  color: white;
+  padding: 4% 6%;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}

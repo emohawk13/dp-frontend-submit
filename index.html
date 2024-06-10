@@ -1,0 +1,111 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel With Us!</title>
+    <link rel="stylesheet" href="/styles/common-styles.css" />
+    <link rel="stylesheet" href="/styles/form-styles.css" />
+  </head>
+  <body>
+    <h1>Please enter your info below</h1>
+    <div class="container">
+      <form action="/pages/submitted.html" method="POST" id="travelForm">
+        <div class="grid-group">
+          <div class="one-row">
+            <label for="fname">First Name:</label><br />
+            <input
+              type="text"
+              id="fname"
+              name="fname"
+              placeholder="Enter First Name"
+            /><br /><br />
+          </div>
+          <div class="one-row">
+            <label for="lname">Last Name:</label><br />
+            <input
+              type="text"
+              id="lname"
+              name="lname"
+              placeholder="Enter Last Name"
+            /><br /><br />
+          </div>
+        </div>
+        <label for="email">Email:</label><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter Email"
+        /><br /><br />
+        <label for="pnumber">Phone Number:</label><br />
+        <input
+          type="tel"
+          id="pnumber"
+          name="pnumber"
+          placeholder="Enter Phone Number"
+        /><br /><br />
+        <div class="grid-group">
+          <div class="one-row">
+            <label for="sdate">Start Date:</label><br />
+            <input type="date" id="sdate" name="s-date" /><br /><br />
+          </div>
+          <div class="one-row">
+            <label for="edate">End Date:</label><br />
+            <input type="date" id="edate" name="e-date" /><br /><br />
+          </div>
+        </div>
+        <div class="options">
+          <h3>Options:</h3>
+          <div class="grid-group">
+            <div class="one-row">
+              <label for="basic">Basic Package</label>
+              <input type="radio" id="basic" name="package" value="Basic" checked/>
+            </div>
+            <div class="one-row">
+              <label for="premium">Premium Package</label>
+              <input type="radio" id="premium" name="package" value="Premium" />
+            </div>
+          </div>
+          <div>
+            <input type="checkbox" id="rentalCar" name="rentalCar" />
+            <label for="rentalCar">Rental Car</label>
+          </div>
+          <div>
+            <input type="checkbox" id="hotel" name="hotel" />
+            <label for="hotel">Hotel</label>
+          </div>
+          <div>
+            <input
+              type="checkbox"
+              id="accommodations"
+              name="accommodations"
+              onchange="toggleOtherAccommodations()"
+            />
+            <label for="accommodations">Other Accommodations</label>
+            <div id="otherAccommodationsRequest">
+              <br />
+              <textarea
+                placeholder="Please enter your request here:"
+                id="otherAccommodationsTextArea"
+                name="otherAccommodationsRequest"
+                rows="4"
+                cols="50"
+              ></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="p-container">
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+    <footer>
+      <h6>Feel free to reach our company here</h6>
+      <p>435-889-8855</p>
+    </footer>
+    <script src="scripts/toggleOther.js"></script>
+    <script src="scripts/passData.js"></script>
+  </body>
+</html>
