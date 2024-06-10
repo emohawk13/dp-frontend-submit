@@ -2,7 +2,7 @@ html, body {
   margin: 0;
   font-family: "Lato", "sans-serif";
   color: #777;
-  font-size: 15px;
+  font-size: 1em;
   line-height: 1.8;
 }
 
@@ -11,6 +11,35 @@ a {
   color: inherit;
 }
 
+.inline-ref {
+  color: blue;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.formatted-heading {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: white;
+  background-color: blue;
+}
+
 footer {
   padding: 5%;
+}
+
+button {
+  width: 30%;
+  justify-content: center;
+  align-content: center;
 }

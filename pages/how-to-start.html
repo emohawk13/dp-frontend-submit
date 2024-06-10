@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting Started</title>
+    <link rel="stylesheet" href="/submit/styles/common-styles.css">
+    <link rel="stylesheet" href="/submit/styles/nav-styles.css">
+    <link rel="stylesheet" href="/submit/styles/get-started-styles.css">
+</head>
+
+<body>
+    <div class="formatted-heading">
+        <h1>How to get Started</h1>
+    </div>
+    <div class="nav-bar">
+        <div class="nav-item"><a href="/submit/pages/index.html">Home</a></div>
+        <div class="nav-item"><a href="/submit/pages/how-to-start.html">Get Started</a></div>
+        <div class="nav-item"><a href="/submit//pages/form.html">Subscribe to our Newsletter</a></div>
+        <div class="nav-item"><a href="https://www.docker.com/">Docker Website</a></div>
+        <div class="nav-item"><a
+                href="https://docs.docker.com/?_gl=1*1ytb2kb*_gcl_au*MTI4NTc1Mzg2MS4xNzE3OTcyMDMz*_ga*MTUyNDcyNTA2Ny4xNzE3NTU1MjI3*_ga_XJWPQMJYHQ*MTcxNzk3MjAzMy4yLjEuMTcxNzk3MjI1MS42MC4wLjA.">Docker
+                Docs</a></div>
+    </div>
+    <div class="content">
+        <h2>The Basics</h2>
+        <div class="context">
+            <p>If you look below, you will see a basic way of using the Docker CLI (command line interface). There are a
+                few ways to manage Docker containers, but most use either the CLI or Docker Desktop. I prefer CLI, I
+                feel that there is more control and it give a better instruction of understanding everything you are
+                expecting of you container.</p>
+            <p>Lets install the most recent version of Ubuntu, looking below is a command you can run after following
+                the instructions related to your OS <a href="https://docs.docker.com/engine/install/"
+                    class="inline-ref">here</a>, another personal preference, I like to run things like this using
+                Linux. After installation, you can run this command within the terminal.</p>
+        </div>
+        <div class="cli">
+            <div class="inside-cli">
+                <p>sudo docker pull ubuntu |</p>
+            </div>
+        </div>
+        <div class="context">
+            <p>You will see a bunch of lines of code running through downloading your Docker Image. After your terminal
+                returns to normal you will see a set of random characters, this represents the docker container ID. To
+                verify the image was successfully pulled and running copy the container ID and replace &lt;container
+                id&gt; in the line of code below and run the command.</&container>
+            </p>
+        </div>
+        <div class="cli">
+            <div class="inside-cli">
+                <p>sudo docker ps &lt;container id&gt; |</p>
+            </div>
+        </div>
+        <div class="context">
+            <p>This will show something along the lines of the output below: </p>
+        </div>
+        <div class="cli">
+            <div class="inside-cli ps-image">
+                <table>
+                    <tr>
+                        <th>CONTAINER ID</th>
+                        <th></th>
+                        <th> IMAGE </th>
+                        <th></th>
+                        <th> COMMAND </th>
+                        <th></th>
+                        <th> CREATED </th>
+                        <th></th>
+                        <th> STATUS </th>
+                        <th></th>
+                        <th> PORTS </th>
+                        <th> NAMES </th>
+                    </tr>
+                    <tr>
+                        <td>1a2b3c4d5e6f</td>
+                        <td></td>
+                        <td>ubuntu</td>
+                        <td></td>
+                        <td>"sleep 1000"</td>
+                        <td></td>
+                        <td>1 seconds ago</td>
+                        <td></td>
+                        <td>Up 2 seconds</td>
+                        <td></td>
+                        <td></td>
+                        <td>pedantic_brown</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="context">
+            <h3>Congratulations!!!</h3>
+        </div>
+        <p>You successfully set up your first image and ran it to turn it into a working container!!</p>
+    </div>
+    <footer class="content">
+        <button><a href="#top">Return to Top</a></button>
+    </footer>
+</body>
+
+</html>

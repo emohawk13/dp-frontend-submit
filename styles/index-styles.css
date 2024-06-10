@@ -1,22 +1,13 @@
-.content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 90%;
-}
-
-.formatted-heading {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-}
-
 .wording {
   padding: 2.5% 5%;
   width: 80%;
+}
+
+.hero {
+  display: flex;
+  padding: 8%;
+  width: 90%;
+  align-items: flex-start;
 }
 
 .list-content {
@@ -92,10 +83,4 @@ td {
 
 h2, h3, h4, h6, h5 {
   font-size: 1.6em;
-}
-
-button {
-  width: 30%;
-  justify-content: center;
-  align-content: center;
 }

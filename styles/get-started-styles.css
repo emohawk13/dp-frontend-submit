@@ -1,0 +1,21 @@
+.context {
+    width: 80%;
+}
+
+.cli {
+    background-color: rgb(0, 0, 0);
+    width: 80%;
+}
+
+.inside-cli {
+    padding: 2%;
+    color: green;
+}
+
+.ps-image {
+    display: grid;
+}
+
+th {
+    font-size: smaller;
+}
