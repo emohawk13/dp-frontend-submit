@@ -1,0 +1,44 @@
+/* About Section */
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.about > h2 {
+  padding-top: 10%;
+  color: inherit;
+}
+
+.about > p {
+  padding: 4%;
+}
+
+.about > button {
+  padding: 1% 5%;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Index custom container style */
+.container {
+  min-height: 800px;
+  position: relative;
+  background-image: url("https://media.expedia.com/media/content/shared/images/travelguides/sem-hotels-tablet.jpg?impolicy=fcrop&w=360&h=224&q=medium");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container-filter {
+  background-color: rgba(0, 0, 0, 0.479);
+  width: 100%;
+  height: 100%;
+  padding: 5%;
+}

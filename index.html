@@ -1,111 +1,47 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Travel With Us!</title>
+    <title>Not-Expedia</title>
     <link rel="stylesheet" href="/styles/common-styles.css" />
-    <link rel="stylesheet" href="/styles/form-styles.css" />
+    <link rel="stylesheet" href="/styles/index-styles.css" />
+    <link rel="stylesheet" href="/styles/nav-styles.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      rel="stylesheet"/>
   </head>
   <body>
-    <h1>Please enter your info below</h1>
+    <div class="heading">
+      <i class="fa fa-hotel"></i>
+      <h1>Welcome to Not-Expedia!</h1>
+    </div>
+    <div class="nav-bar">
+      <div class="nav-item"><a href="/pages/form.html">Form Access</a></div>
+    </div>
     <div class="container">
-      <form action="/pages/submitted.html" method="POST" id="travelForm">
-        <div class="grid-group">
-          <div class="one-row">
-            <label for="fname">First Name:</label><br />
-            <input
-              type="text"
-              id="fname"
-              name="fname"
-              placeholder="Enter First Name"
-            /><br /><br />
-          </div>
-          <div class="one-row">
-            <label for="lname">Last Name:</label><br />
-            <input
-              type="text"
-              id="lname"
-              name="lname"
-              placeholder="Enter Last Name"
-            /><br /><br />
-          </div>
+      <div class="container-filter">
+        <div class="about">
+          <h2>
+            We have been working with our customers since 2024 to help find the
+            right vacation packages.
+          </h2>
+          <p>
+            We offer a lot, so its easy to get lost, we recommend filing out our
+            registration form to get the best experience.
+          </p>
+          <button>
+            <a href="/pages/form.html">Click to get started today! </a>
+          </button>
         </div>
-        <label for="email">Email:</label><br />
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="Enter Email"
-        /><br /><br />
-        <label for="pnumber">Phone Number:</label><br />
-        <input
-          type="tel"
-          id="pnumber"
-          name="pnumber"
-          placeholder="Enter Phone Number"
-        /><br /><br />
-        <div class="grid-group">
-          <div class="one-row">
-            <label for="sdate">Start Date:</label><br />
-            <input type="date" id="sdate" name="s-date" /><br /><br />
-          </div>
-          <div class="one-row">
-            <label for="edate">End Date:</label><br />
-            <input type="date" id="edate" name="e-date" /><br /><br />
-          </div>
-        </div>
-        <div class="options">
-          <h3>Options:</h3>
-          <div class="grid-group">
-            <div class="one-row">
-              <label for="basic">Basic Package</label>
-              <input type="radio" id="basic" name="package" value="Basic" checked/>
-            </div>
-            <div class="one-row">
-              <label for="premium">Premium Package</label>
-              <input type="radio" id="premium" name="package" value="Premium" />
-            </div>
-          </div>
-          <div>
-            <input type="checkbox" id="rentalCar" name="rentalCar" />
-            <label for="rentalCar">Rental Car</label>
-          </div>
-          <div>
-            <input type="checkbox" id="hotel" name="hotel" />
-            <label for="hotel">Hotel</label>
-          </div>
-          <div>
-            <input
-              type="checkbox"
-              id="accommodations"
-              name="accommodations"
-              onchange="toggleOtherAccommodations()"
-            />
-            <label for="accommodations">Other Accommodations</label>
-            <div id="otherAccommodationsRequest">
-              <br />
-              <textarea
-                placeholder="Please enter your request here:"
-                id="otherAccommodationsTextArea"
-                name="otherAccommodationsRequest"
-                rows="4"
-                cols="50"
-              ></textarea>
-            </div>
-          </div>
-        </div>
-        <div class="p-container">
-          <input type="submit" value="Submit" />
-        </div>
-      </form>
+      </div>
     </div>
     <footer>
-      <h6>Feel free to reach our company here</h6>
-      <p>435-889-8855</p>
+      <div class="company-info">
+        <h3>Feel free to reach Not-Expedia here</h3>
+        <p>Phone: 555-555-5555</p>
+        <p>Address: 123 Fake St, Some Town USA</p>
+      </div>
     </footer>
-    <script src="scripts/toggleOther.js"></script>
-    <script src="scripts/passData.js"></script>
   </body>
 </html>
+

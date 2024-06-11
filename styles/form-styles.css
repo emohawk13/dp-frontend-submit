@@ -61,7 +61,7 @@ textarea {
 
 /* Submit Button */
 .submit-container {
-    padding: 2%;
+  padding: 2%;
 }
 
 input[type="submit"] {
@@ -76,4 +76,15 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   background-color: #45a049;
+}
+
+/* background */
+.background {
+  min-height: 800px;
+  position: relative;
+  background-image: url("https://www.newworldhotels.com/wp-content/uploads/2014/05/Mobile-NWHBR-Exterior.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }

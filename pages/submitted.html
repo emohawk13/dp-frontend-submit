@@ -1,35 +1,54 @@
+<!-- submitted.html -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Booking Summary</title>
-    <link rel="stylesheet" href="/styles/common-styles.css">
-    <link rel="stylesheet" href="/styles/submitted-styles.css">
-</head>
-<body>
-    <h1>Booking Summary</h1>
-    <div id="summary"></div>
+    <link rel="stylesheet" href="/styles/common-styles.css" />
+    <link rel="stylesheet" href="/styles/nav-styles.css" />
+    <link rel="stylesheet" href="/styles/submitted-styles.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="heading">
+      <i class="fa fa-hotel"></i>
+      <h1>Booking Summary</h1>
+    </div>
+    <div class="nav-bar">
+      <div class="nav-item"><a href="/index.html">Home</a></div>
+    </div>
+    <div class="background">
+        <div id="summary" class="summary"></div>
+    </div>
     <footer>
-        <h6>Feel free to reach our company here</h6>
-        <p>435-889-8855</p>
-      </footer>
+      <div class="company-info">
+        <h3>Feel free to reach Not-Expedia here</h3>
+        <p>Phone: 555-555-5555</p>
+        <p>Address: 123 Fake St in Some Town USA</p>
+      </div>
+    </footer>
     <script>
-        const queryString = window.location.search;
-        const urlParams = new URLSearchParams(queryString);
-        const firstName = urlParams.get("fname");
-        const lastName = urlParams.get("lname");
-        const email = urlParams.get("email");
-        const phoneNumber = urlParams.get("pnumber");
-        const startDate = urlParams.get("s-date");
-        const endDate = urlParams.get("e-date");
-        const package = urlParams.get("package");
-        const rentalCar = urlParams.has("rentalCar") ? "Yes" : "No";
-        const hotel = urlParams.has("hotel") ? "Yes" : "No";
-        const otherAccommodations = urlParams.has("accommodations") ? "Yes" : "No";
-        const otherAccommodationsRequest = urlParams.get("otherAccommodationsRequest");
-        /// Above feeds the fields and below creates the HTML structure
-        const summaryContent = `
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+      const firstName = urlParams.get("fname");
+      const lastName = urlParams.get("lname");
+      const email = urlParams.get("email");
+      const phoneNumber = urlParams.get("pnumber");
+      const startDate = urlParams.get("s-date");
+      const endDate = urlParams.get("e-date");
+      const package = urlParams.get("package");
+      const rentalCar = urlParams.has("rentalCar") ? "Yes" : "No";
+      const hotel = urlParams.has("hotel") ? "Yes" : "No";
+      const otherAccommodations = urlParams.has("accommodations")
+        ? "Yes"
+        : "No";
+      const otherAccommodationsRequest = urlParams.get(
+        "otherAccommodationsRequest"
+      );
+      /// Above feeds the fields and below creates the HTML structure
+      const summaryContent = `
             <h1>Name: ${firstName} ${lastName}</h1>
             <p>Email: ${email}</p>
             <p>Phone Number: ${phoneNumber}</p>
@@ -39,9 +58,12 @@
             <p>Rental Car: ${rentalCar}</p>
             <p>Hotel: ${hotel}</p>
             <p>Other Accommodations: ${otherAccommodations}</p>
-            ${otherAccommodations === "Yes"
-                ? `<p>Other Accommodations Request: ${otherAccommodationsRequest}</p>`: ""}`;
-        document.getElementById("summary").innerHTML = summaryContent;
+            ${
+              otherAccommodations === "Yes"
+                ? `<p>Other Accommodations Request: ${otherAccommodationsRequest}</p>`
+                : ""
+            }`;
+      document.getElementById("summary").innerHTML = summaryContent;
     </script>
-</body>
+  </body>
 </html>
